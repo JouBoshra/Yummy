@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <!------------------links-->
+    <link rel="shortcut icon" href="images/logo.png" type="Yummy Logo">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="side-nav-menu z-3 h-100 position-fixed d-flex ">
+            <!-- Menu Items -->
+            <div class="menu-items h-100 d-flex flex-column justify-content-between  ">
+                <header>
+                    <ul class="list-unstyled p-4 overflow-hidden">
+                        <li onclick="showSearchInputs(); closeSideNav()" class="py-2 position-relative">Search</li>
+                        <li onclick="categoriesApi()" class="py-2 position-relative">Categories</li>
+                        <li onclick="areaApi()" class="py-2 position-relative">Area</li>
+                        <li onclick="getIngredients()" class="py-2 position-relative">Ingredients</li>
+                        <li onclick="showContacts(); closeSideNav()"class="py-2 position-relative">Contact Us</li>
+                    </ul>
+                </header>
+                <footer class="p-4">
+                    <div class="menu-items-icon ">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <p>Copyright Â© 2019 All Rights <br>
+                        Reserved.</p>
+                </footer>
+            </div>
+            <div class="side-bar-item d-flex flex-column h-100 bg-white justify-content-between p-2 text-center  ">
+                <header class="logoImg"><img src="images/logo.png" alt="yummy logo"></header>
+                <main class="xBottom"><i class="fa-solid open-close-icon fa-x"></i></main>
+                <footer class="globeimg "><i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </footer>
+            </div>
+        </div>
+    </section>
+  
+    <div class="container w-75 py-4" id="searchContainer">
+ 
+    </div>
+<section>
+  <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+    <i class="fa fa-spinner fa-spin fa-5x"></i>
+  </div>
+</section>
+
+    <section>
+
+        <div class="container card-randomly">
+            <div class="row py-5" id="cardrandomly">
+              
+            </div>
+        </div>
+
+    </section>
+  
+
+    <!------------------Java Script Files-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
